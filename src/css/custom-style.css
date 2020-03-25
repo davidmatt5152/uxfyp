@@ -156,12 +156,17 @@
 
 .grey-card {
     background-color: lightgray;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
+    padding-top: 20px;
+    text-align: center;
+    overflow:hidden;
 }
 
 .card-hover:hover {
     transition: all .4s ease;
     transform: scale(1.1);
-    box-shadow: dimgrey;
+    box-shadow: 0 5px 8px grey;
 }
 .card-hover {
     border-radius: 15px;
@@ -169,4 +174,5 @@
     overflow: hidden;
     cursor: pointer;
 }
+
 
