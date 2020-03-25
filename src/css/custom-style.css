@@ -150,12 +150,22 @@
 
 .top-buffer {
     margin-top:20px;
-    margin-right: 5px;
     justify-content: center;
     justify-items: center;
 }
 
 .grey-card {
     background-color: lightgray;
+}
+
+.card-hover:hover {
+    transform: scale(1.1);
+    box-shadow: dimgrey;
+}
+.card-hover {
+    border-radius: 15px;
+    height: 240px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
