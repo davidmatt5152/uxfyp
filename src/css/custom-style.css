@@ -142,3 +142,20 @@
     left: 178px;
     transform: rotate(-8deg);
 }
+
+.reviews-padding {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.top-buffer {
+    margin-top:20px;
+    margin-right: 5px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.grey-card {
+    background-color: lightgray;
+}
+
