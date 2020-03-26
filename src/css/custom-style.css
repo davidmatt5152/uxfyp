@@ -160,7 +160,6 @@
     padding-inline-start: 20px;
     padding-top: 20px;
     text-align: center;
-    overflow:hidden;
 }
 
 .card-hover:hover {
@@ -170,9 +169,14 @@
 }
 .card-hover {
     border-radius: 15px;
-    height: 240px;
+    height: 270px;
     overflow: hidden;
     cursor: pointer;
 }
 
+
+.copyright-notice {
+    text-align: center;
+    margin-top: 400px;
+}
 
