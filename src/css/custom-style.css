@@ -177,7 +177,7 @@
 
 .copyright-notice {
     margin-top: 200px;
-    position: absolute;
+    position: relative;
     right: 0;
     bottom: 0;
     left: 0;
@@ -187,4 +187,7 @@
 }
 
 
+/* This is for the border around the about text  on about page */
+.innerPara{padding:20px ;}
+legend{width:200px;padding:10px 20px;}
 
