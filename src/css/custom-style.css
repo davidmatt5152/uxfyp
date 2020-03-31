@@ -12,6 +12,14 @@
     left: 0;
 }
 
+.ui-ux {
+    background-image: url("../images/UIvsUX.PNG");
+}
+
+.custom-margin {
+    margin-top: 400px;
+}
+
 body {
     background-color: #F8F8F8;
 }
@@ -155,9 +163,10 @@ body {
 }
 
 .reviews-padding {
-    margin-top: 150px;
+    margin-top: 200px;
     margin-bottom: 100px;
 }
+
 
 .top-buffer {
     margin-top:20px;
