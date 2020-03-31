@@ -1,15 +1,14 @@
-/*.big-banner {*/
-/*    background-image: url('../images/bgscreen.jpg');*/
-/*    width: 100%;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*}*/
+
 
 .big-banner {
     background-color: #EFF52F;
     width: 100%;
     top: 0;
     left: 0;
+}
+
+#top-jumbotron {
+    margin-bottom: 0;
 }
 
 .ui-ux {
@@ -163,10 +162,20 @@ body {
 }
 
 .reviews-padding {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 100px;
 }
 
+.review-bg-color {
+    background-color: lightgoldenrodyellow;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#middle-jumbotron {
+    margin-bottom: 0;
+}
 
 .top-buffer {
     margin-top:20px;
@@ -196,7 +205,7 @@ body {
 
 
 .copyright-notice {
-    margin-top: 200px;
+    /*margin-top: 200px;*/
     position: relative;
     right: 0;
     bottom: 0;
@@ -212,7 +221,10 @@ body {
 legend{width:200px;padding:10px 20px;}
 
 
-.uiux-explained {
-
+.end-bg-color {
+    background-color: lightgrey;
 }
 
+#bottom-jumbotron {
+    margin-bottom:0;
+}
