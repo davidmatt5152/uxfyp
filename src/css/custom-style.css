@@ -181,7 +181,7 @@ body {
 }
 
 .review-bg-color {
-    background-color: #E8EDDF;
+    background-color: floralwhite;
     width: 100%;
     top: 0;
     left: 0;
@@ -236,12 +236,20 @@ legend{width:200px;padding:10px 20px;}
 
 
 .end-bg-color {
-    background-color: #CFDBD5;
-            /*#E5E5E5;*/
+    background-color: #E8EDDF;
+
 }
 
 
 
 #bottom-jumbotron {
     margin-bottom:0;
+}
+
+.padding-image {
+    padding-top: 50px;
+}
+
+.heading-padding {
+    padding-bottom: 20px;
 }
