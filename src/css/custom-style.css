@@ -1,17 +1,49 @@
+
+
 .big-banner {
-    background-image: url('../images/bgscreen.jpg');
+    background-color: #F5CB5C;
     width: 100%;
     top: 0;
     left: 0;
 }
 
+#top-jumbotron {
+    margin-bottom: 0;
+}
+
+.ui-ux {
+    background-image: url("../images/UIvsUX.PNG");
+}
+
+.custom-margin {
+    margin-top: 400px;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
 .line-spacing {
-    line-height: 100px;
+    line-height: 20px;
 }
 
 * {
     box-sizing: border-box;
 }
+
+/*.button-custom {*/
+/*    background: white!important;*/
+/*    padding: 1rem 4rem;*/
+/*    border: 2px solid black;*/
+/*    border: 2px;*/
+
+/*}*/
+
+/*.btn-custom:hover {*/
+/*    background: black;*/
+/*    border:2px solid black;*/
+/*    color: black*/
+/*}*/
 
 .wrapper {
     float: right;
@@ -148,6 +180,17 @@
     margin-bottom: 100px;
 }
 
+.review-bg-color {
+    background-color: floralwhite;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#middle-jumbotron {
+    margin-bottom: 0;
+}
+
 .top-buffer {
     margin-top:20px;
     justify-content: center;
@@ -176,7 +219,37 @@
 
 
 .copyright-notice {
+    /*margin-top: 200px;*/
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
     text-align: center;
-    margin-top: 400px;
 }
 
+
+/* This is for the border around the about text  on about page */
+.innerPara{padding:20px ;}
+legend{width:200px;padding:10px 20px;}
+
+
+.end-bg-color {
+    background-color: #E8EDDF;
+
+}
+
+
+
+#bottom-jumbotron {
+    margin-bottom:0;
+}
+
+.padding-image {
+    padding-top: 50px;
+}
+
+.heading-padding {
+    padding-bottom: 20px;
+}
