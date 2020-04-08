@@ -11,6 +11,7 @@
 
     <title>Home</title>
 </head>
+
 <body>
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -50,36 +51,109 @@
 
 <div id="middle-jumbotron" class="jumbotron" style="height: 1000px; padding-top: 150px;">
     <div class="container">
-        <form id="ajax-contact" method="post" action="mailer.php">
-            <div class="field">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+
+        <form class="form-signin">
+            <div class="text-center mb-4">
+                <h1 class="h3 mb-3 font-weight-normal">Floating labels</h1>
+                <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>
             </div>
 
-            <div class="field">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputEmail">Email address</label>
             </div>
 
-            <div class="field">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+            <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Password</label>
             </div>
 
-            <div class="field">
-                <button type="submit">Send</button>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
             </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2019</p>
         </form>
+
+
+<!--        <form id="ajax-contact" method="post" action="mailer.php">-->
+<!--            <div class="field">-->
+<!--                <label for="name">Name:</label>-->
+<!--                <input type="text" id="name" name="name" required>-->
+<!--            </div>-->
+
+<!--            <div class="field">-->
+<!--                <label for="email">Email:</label>-->
+<!--                <input type="email" id="email" name="email" required>-->
+<!--            </div>-->
+
+<!--            <div class="field">-->
+<!--                <label for="message">Message:</label>-->
+<!--                <textarea id="message" name="message" required></textarea>-->
+<!--            </div>-->
+
+<!--            <div class="field">-->
+<!--                <button type="submit">Send</button>-->
+<!--            </div>-->
+<!--        </form>-->
     </div>
 
 </div>
 
 
 
-<div class="copyright-notice">
-    <p>Copyright 2020 Cork, Ireland. All rights reserved. <br>Email davidmatt5152@gmail.com for more info</p>
-</div>
+<!--<div class="copyright-notice">-->
+<!--    <p>Copyright 2020 Cork, Ireland. All rights reserved. <br>Email davidmatt5152@gmail.com for more info</p>-->
+<!--</div>-->
 
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <p>All rights reserved David Twomey 2020</p>
+            <small class="d-block mb-3 text-muted">&copy; 2019-2020</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Cool stuff</a></li>
+                <li><a class="text-muted" href="#">Random feature</a></li>
+                <li><a class="text-muted" href="#">Team feature</a></li>
+                <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                <li><a class="text-muted" href="#">Another one</a></li>
+                <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Resource</a></li>
+                <li><a class="text-muted" href="#">Resource name</a></li>
+                <li><a class="text-muted" href="#">Another resource</a></li>
+                <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Business</a></li>
+                <li><a class="text-muted" href="#">Education</a></li>
+                <li><a class="text-muted" href="#">Government</a></li>
+                <li><a class="text-muted" href="#">Gaming</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="text-muted" href="#">Team</a></li>
+                <li><a class="text-muted" href="#">Locations</a></li>
+                <li><a class="text-muted" href="#">Privacy</a></li>
+                <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+        </div>
+>    </div>
+</footer>
 
 <!-- optional javascript here -->
 
