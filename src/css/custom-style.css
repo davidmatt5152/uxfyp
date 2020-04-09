@@ -16,11 +16,12 @@
 }
 
 .custom-margin {
-    margin-top: 400px;
+    margin-top: 400px!important;
 }
 
 body {
     background-color: #F8F8F8;
+    padding-top: 200px;
 }
 
 .line-spacing {
@@ -266,7 +267,7 @@ legend{width:200px;padding:10px 20px;}
     transform-origin: top;
 }
 
-#margin-top {
+.margin-top {
     margin-top: 200px;
     padding-top: 200px;
 }
