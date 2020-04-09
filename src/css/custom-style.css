@@ -265,3 +265,6 @@ legend{width:200px;padding:10px 20px;}
     background-color: grey;
 }
 
+#myBtn {
+    align-content: end;
+}
