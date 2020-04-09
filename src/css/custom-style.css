@@ -21,7 +21,7 @@
 
 body {
     background-color: #F8F8F8;
-    padding-top: 200px;
+    padding-top: 50px;
 }
 
 .line-spacing {
@@ -219,17 +219,6 @@ body {
 }
 
 
-.copyright-notice {
-    /*margin-top: 200px;*/
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;
-}
-
 
 /* This is for the border around the about text  on about page */
 .innerPara{padding:20px ;}
@@ -267,8 +256,8 @@ legend{width:200px;padding:10px 20px;}
     transform-origin: top;
 }
 
-.margin-top {
-    margin-top: 200px;
-    padding-top: 200px;
+.footer-bgc {
+    background-color: white;
+
 }
 
