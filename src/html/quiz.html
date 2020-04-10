@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/custom-style.css">
     <script type="text/javascript" src="../javascript/basicjs.js"></script>
     <script type="text/javascript" src="../javascript/quiz.js"></script>
+<!--    <script defer src="../javascript/quiz.js"></script>-->
 
     <title>Home</title>
 </head>
@@ -48,15 +49,27 @@
     </div>
 </nav>
 
+<div class="jumbotron" style="height: 800px; padding-top: 120px; background-color: #f5cb5c">
+<div id="quiz-bg" class="container offset-4">
 
-<div class="container">
+    <div id="question-container" class="hide pt-5">
+        <div id="question">Questions</div>
+        <div id="answer-buttons" class="btn-grid pt-5">
+            <button class="btn-blue">Answer 1</button>
+            <button class="btn-blue">Answer 2</button>
+            <button class="btn-blue">Answer 3</button>
 
-    <div id="quiz"></div>
+        </div>
+    </div>
+    <div class="controls pt-5">
+        <button id="start-btn" class="start-btn btn-main">Start</button>
+        <button id="next-btn" class="next-btn btn-primary hide">Next</button>
+    </div>
 
-    <button id="submit">Submit Quiz</button>
-
-    <div id="results"></div>
 </div>
+</div>
+
+
 
 
 

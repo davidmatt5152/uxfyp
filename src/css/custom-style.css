@@ -289,3 +289,48 @@ legend{width:200px;padding:10px 20px;}
     margin-top: 0;
 }
 
+body{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #333;
+}
+.question{
+    font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
+.answers label{
+    display: block;
+}
+#submit{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #279;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#submit:hover{
+    background-color: #38a;
+}
+
+
+#quiz-bg {
+    width: 500px;
+    max-width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 0 40px 1px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto);
+    gap: 20px;
+    border-radius: 5px;
+}
