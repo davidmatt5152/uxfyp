@@ -1,162 +1,112 @@
 const startButton = document.getElementById('start-btn')
-const questionContainerElement = document.getElementById('questions-container')
+const nextButton = document.getElementById('next-btn')
+const questionContainerElement = document.getElementById('question-container')
+const questionElement = document.getElementById('question')
+const answerButtonsElement = document.getElementById('answer-buttons')
+
+let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++
+    setNextQuestion()
+})
 
 function startGame() {
-    console.log('Started')
     startButton.classList.add('hide')
+    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
+    setNextQuestion()
 }
 
-function setNextQuestion(){
-
+function setNextQuestion() {
+    resetState()
+    showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
-function selectAnswer() {
-
+function showQuestion(question) {
+    questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+        const button = document.createElement('button')
+        button.innerText = answer.text
+        button.classList.add('btn')
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', selectAnswer)
+        answerButtonsElement.appendChild(button)
+    })
 }
 
+function resetState() {
+    clearStatusClass(document.body)
+    nextButton.classList.add('hide')
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    }
+}
 
+function selectAnswer(e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+        nextButton.classList.remove('hide')
+    } else {
+        startButton.innerText = 'Restart'
+        startButton.classList.remove('hide')
+    }
+}
 
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+}
 
+function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-// (function(){
-//     function buildQuiz(){
-//         // variable to store the HTML output
-//         const output = [];
-//
-//         // for each question...
-//         myQuestions.forEach(
-//             (currentQuestion, questionNumber) => {
-//
-//                 // variable to store the list of possible answers
-//                 const answers = [];
-//
-//                 // and for each available answer...
-//                 for(letter in currentQuestion.answers){
-//
-//                     // ...add an HTML radio button
-//                     answers.push(
-//                         `<label>
-//                           <input type="radio" name="question${questionNumber}" value="${letter}">
-//                           ${letter} :
-//                           ${currentQuestion.answers[letter]}
-//                         </label>`
-//                     );
-//                 }
-//
-//                 // add this question and its answers to the output
-//                 output.push(
-//                     `<div class="question"> ${currentQuestion.question} </div>
-//                     <div class="answers"> ${answers.join('')} </div>`
-//                 );
-//             }
-//         );
-//
-//         // finally combine our output list into one string of HTML and put it on the page
-//         quizContainer.innerHTML = output.join('');
-//     }
-//
-//     function showResults() {
-//
-//         // gather answer containers from our quiz
-//         const answerContainers = quizContainer.querySelectorAll('.answers');
-//
-//         // keep track of user's answers
-//         let numCorrect = 0;
-//
-//         // for each question...
-//         myQuestions.forEach((currentQuestion, questionNumber) => {
-//
-//             // find selected answer
-//             const answerContainer = answerContainers[questionNumber];
-//             const selector = `input[name=question${questionNumber}]:checked`;
-//             const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-//
-//             // if answer is correct
-//             if (userAnswer === currentQuestion.correctAnswer) {
-//                 // add to the number of correct answers
-//                 numCorrect++;
-//
-//                 // color the answers green
-//                 answerContainers[questionNumber].style.color = 'lightgreen';
-//             }
-//             // if answer is wrong or blank
-//             else {
-//                 // color the answers red
-//                 answerContainers[questionNumber].style.color = 'red';
-//             }
-//         });
-//
-//         // show number of correct answers out of total
-//         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-//     }
-//     const quizContainer = document.getElementById('quiz');
-//     const resultsContainer = document.getElementById('results');
-//     const submitButton = document.getElementById('submit');
-//     const myQuestions = [
-//     {
-//         question: "What does UX stand for?",
-//         answers: {
-//             a: "User expectations",
-//             b: "User evaluation",
-//             c: "User experience"
-//         },
-//         correctAnswer: "C"
-//     },
-//     {
-//         question: "How many participants should suffice for a discount usability test?",
-//         answers: {
-//             a: "6",
-//             b: "5",
-//             c: "7"
-//         },
-//         correctAnswer: "b"
-//     },
-//     {
-//         question: "Most important part of design is how it looks",
-//         answers: {
-//             a: "True",
-//             b: "False",
-//         },
-//         correctAnswer: "b"
-//     },
-//     {
-//         question: "When performing a usability test, you should:",
-//         answers: {
-//             a: "Hurry the user to find problems",
-//             b: "Leave the user do their own thing",
-//             c: "Guide the user subtly"
-//         },
-//         correctAnswer: "c"
-//     },
-//     {
-//         question: "Which of these is not part of the UI",
-//         answers: {
-//             a: "Scenarios",
-//             b: "Colours",
-//             c: "Layouts"
-//         },
-//         correctAnswer: "a"
-//     }
-// ];
-//
-// buildQuiz();
-//
-// submitButton.addEventListener('click', showResults);
-// })();
-
- // }
+const questions = [
+    {
+        question: 'What is 2 + 2?',
+        answers: [
+            { text: '4', correct: true },
+            { text: '22', correct: false }
+        ]
+    },
+    {
+        question: 'Who is the best YouTuber?',
+        answers: [
+            { text: 'Web Dev Simplified', correct: true },
+            { text: 'Traversy Media', correct: true },
+            { text: 'Dev Ed', correct: true },
+            { text: 'Fun Fun Function', correct: true }
+        ]
+    },
+    {
+        question: 'Is web development fun?',
+        answers: [
+            { text: 'Kinda', correct: false },
+            { text: 'YES!!!', correct: true },
+            { text: 'Um no', correct: false },
+            { text: 'IDK', correct: false }
+        ]
+    },
+    {
+        question: 'What is 4 * 2?',
+        answers: [
+            { text: '6', correct: false },
+            { text: '8', correct: true }
+        ]
+    }
+]
