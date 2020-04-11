@@ -318,11 +318,9 @@ body{
 }
 #submit:hover{
     background-color: #38a;
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+}*, *::before, *::after {
+     box-sizing: border-box;
+ }
 
 :root {
     --hue-neutral: 200;
@@ -338,12 +336,13 @@ body.wrong {
     --hue: var(--hue-wrong);
 }
 
-.container {
+.quiz-card {
     width: 800px;
+    height: 280px;
     max-width: 80%;
     background-color: white;
     border-radius: 5px;
-    padding: 10px;
+    padding: 25px;
     box-shadow: 0 0 10px 2px;
 }
 
@@ -383,16 +382,10 @@ body.wrong {
     padding: 10px 20px;
 }
 
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .hide {
     display: none;
 }
-
 
 
 
