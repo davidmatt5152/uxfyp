@@ -316,9 +316,12 @@ body{
     cursor: pointer;
     margin-bottom: 20px;
 }
-#submit:hover{
+#submit:hover {
     background-color: #38a;
-}*, *::before, *::after {
+}
+
+
+*, *::before, *::after {
      box-sizing: border-box;
  }
 
@@ -353,7 +356,7 @@ body.wrong {
     margin: 20px 0;
 }
 
-.btn {
+.quiz-btn {
     --hue: var(--hue-neutral);
     border: 1px solid hsl(var(--hue), 100%, 30%);
     background-color: hsl(var(--hue), 100%, 50%);
@@ -363,16 +366,16 @@ body.wrong {
     outline: none;
 }
 
-.btn:hover {
+.quiz-btn:hover {
     border-color: black;
 }
 
-.btn.correct {
+.quiz-btn.correct {
     --hue: var(--hue-correct);
     color: black;
 }
 
-.btn.wrong {
+.quiz-btn.wrong {
     --hue: var(--hue-wrong);
 }
 
@@ -380,6 +383,7 @@ body.wrong {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
+    background-color: #0c5460;
 }
 
 
