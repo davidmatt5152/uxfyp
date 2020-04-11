@@ -331,6 +331,28 @@ body{
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(auto);
-    gap: 20px;
-    border-radius: 5px;
+    gap: 25px;
+}
+
+.btn-blue.correct {
+    background-color: green;
+}
+
+.btn-blue.wrong {
+    background-color: red;
+
+}
+
+.start-btn, .next-btn {
+    font-siz: 1rem;
+    font-weight: bold;
+    padding: 5px 15px;
+    text-decoration-color: black;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
