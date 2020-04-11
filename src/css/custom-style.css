@@ -1,5 +1,4 @@
 
-
 .big-banner {
     background-color: #F5CB5C;
     width: 100%;
@@ -29,19 +28,6 @@ body {
     box-sizing: border-box;
 }
 
-/*.button-custom {*/
-/*    background: white!important;*/
-/*    padding: 1rem 4rem;*/
-/*    border: 2px solid black;*/
-/*    border: 2px;*/
-
-/*}*/
-
-/*.btn-custom:hover {*/
-/*    background: black;*/
-/*    border:2px solid black;*/
-/*    color: black*/
-/*}*/
 
 .wrapper {
     float: right;
@@ -66,14 +52,14 @@ body {
     transform-origin: center bottom;
 }
 
-/*@keyframes rock {*/
-/*    0% {*/
-/*        transform: rotate(-10deg);*/
-/*    }*/
-/*    100% {*/
-/*        transform: rotate(10deg);*/
-/*    }*/
-/*}*/
+@keyframes rock {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
 
 .torso {
     width: 6px;
@@ -142,14 +128,6 @@ body {
     transform-origin: 0%;
 }
 
-/*@keyframes wave2 {*/
-/*    0% {*/
-/*        transform: rotate(20deg);*/
-/*    }*/
-/*    100% {*/
-/*        transform: rotate(-40deg);*/
-/*    }*/
-/*}*/
 
 .leftfoot {
     width: 30px;
@@ -186,6 +164,10 @@ body {
 }
 
 #middle-jumbotron {
+    margin-bottom: 0;
+}
+
+#midlast-jumbo {
     margin-bottom: 0;
 }
 
@@ -268,7 +250,7 @@ legend{width:200px;padding:10px 20px;}
     align-content: end;
 }
 
-
+/* drop down on hover, not supported by bootstrap */
 .dropdown-menu .sub-menu {
     left: 100%;
     position: absolute;
@@ -296,6 +278,7 @@ body{
     font-family: sans-serif;
     color: #333;
 }
+
 .question{
     font-weight: 600;
 }
@@ -340,13 +323,25 @@ body.wrong {
 }
 
 .quiz-card {
-    width: 800px;
+    width: 780px;
     height: 280px;
     max-width: 80%;
     background-color: white;
     border-radius: 5px;
     padding: 25px;
     box-shadow: 0 0 40px -16px;
+}
+
+
+.quiz-example {
+    width: 800px;
+    height: 900px;
+    max-width: 80%;
+    border-radius: 5px;
+    padding: 25px;
+
+    margin-top: 50px;
+    margin-bottom: 300px;
 }
 
 .btn-grid {
@@ -383,7 +378,6 @@ body.wrong {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
-    text-decoration-color: ;
 }
 
 
@@ -391,5 +385,13 @@ body.wrong {
     display: none;
 }
 
+
+#loading-bar {
+    margin-top: 100px;
+}
+
+.progress-bg {
+    background-color: white!important;
+}
 
 
