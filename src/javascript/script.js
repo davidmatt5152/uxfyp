@@ -78,35 +78,43 @@ function clearStatusClass(element) {
 
 const questions = [
     {
-        question: 'What is 2 + 2?',
+        question: 'Discount usability testing is expensive',
         answers: [
-            { text: '4', correct: true },
-            { text: '22', correct: false }
+            { text: 'False', correct: true },
+            { text: 'True', correct: false }
         ]
     },
     {
-        question: 'Who is the best YouTuber?',
+        question: 'You need to be part of the development of a project to be able to do a usability test on it',
         answers: [
-            { text: 'Web Dev Simplified', correct: true },
-            { text: 'Traversy Media', correct: true },
-            { text: 'Dev Ed', correct: true },
-            { text: 'Fun Fun Function', correct: true }
+            { text: 'False', correct: true },
+            { text: 'True', correct: false },
         ]
     },
     {
-        question: 'Is web development fun?',
+        question: 'What does UX stand for?',
         answers: [
-            { text: 'Kinda', correct: false },
-            { text: 'YES!!!', correct: true },
-            { text: 'Um no', correct: false },
-            { text: 'IDK', correct: false }
+            { text: 'User Excitement', correct: false },
+            { text: 'User Enjoyment', correct: false },
+            { text: 'User Journey', correct: false },
+            { text: 'User Experience', correct: true }
         ]
     },
     {
-        question: 'What is 4 * 2?',
+        question: 'What does UI stand for?',
         answers: [
-            { text: '6', correct: false },
-            { text: '8', correct: true }
+            { text: 'User Input', correct: false },
+            { text: 'User Involvement', correct: false },
+            { text: 'User Interface', correct: false },
+            { text: 'User Information', correct: true }
         ]
-    }
+    },
+    {
+        question: 'UX is more important than the UI',
+        answers: [
+            { text: 'True', correct: false },
+            { text: 'False', correct: true },
+
+        ]
+    },
 ]
