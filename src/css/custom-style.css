@@ -175,7 +175,7 @@ body {
 
 .reviews-padding {
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .review-bg-color {
@@ -200,6 +200,7 @@ body {
     padding-inline-end: 20px;
     padding-inline-start: 20px;
     padding-top: 20px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -209,10 +210,11 @@ body {
     box-shadow: 0 5px 8px grey;
 }
 .card-hover {
-    border-radius: 15px;
-    height: 270px;
+    border-radius: 10px;
+    height: 400px;
     overflow: hidden;
     cursor: pointer;
+
 }
 
 
