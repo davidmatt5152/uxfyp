@@ -391,7 +391,28 @@ body.wrong {
 }
 
 .progress-bg {
-    background-color: white!important;
+    background-color: white !important;
+}
+
+.active-nav {
+    background-color: #312f2f;
+    display:flex;
+    top: 0;
+    bottom: 0;
+    border-radius: 4px;
+}
+
+.image-border {
+    border-color: black;
+    border-width: 2px;
+}
+
+.line-breaker { display: block;
+    overflow: hidden;
+    border-style: inset;
+    height: 5px;
+    color: black;
+    margin-top: 60px;
 }
 
 
