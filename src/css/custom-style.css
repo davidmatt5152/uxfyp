@@ -1,5 +1,4 @@
 
-
 .big-banner {
     background-color: #F5CB5C;
     width: 100%;
@@ -11,16 +10,14 @@
     margin-bottom: 0;
 }
 
-.ui-ux {
-    background-image: url("../images/UIvsUX.PNG");
-}
 
 .custom-margin {
-    margin-top: 400px;
+    margin-top: 400px!important;
 }
 
 body {
     background-color: #F8F8F8;
+    padding-top: 50px;
 }
 
 .line-spacing {
@@ -31,19 +28,6 @@ body {
     box-sizing: border-box;
 }
 
-/*.button-custom {*/
-/*    background: white!important;*/
-/*    padding: 1rem 4rem;*/
-/*    border: 2px solid black;*/
-/*    border: 2px;*/
-
-/*}*/
-
-/*.btn-custom:hover {*/
-/*    background: black;*/
-/*    border:2px solid black;*/
-/*    color: black*/
-/*}*/
 
 .wrapper {
     float: right;
@@ -68,14 +52,14 @@ body {
     transform-origin: center bottom;
 }
 
-/*@keyframes rock {*/
-/*    0% {*/
-/*        transform: rotate(-10deg);*/
-/*    }*/
-/*    100% {*/
-/*        transform: rotate(10deg);*/
-/*    }*/
-/*}*/
+@keyframes rock {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
 
 .torso {
     width: 6px;
@@ -144,14 +128,6 @@ body {
     transform-origin: 0%;
 }
 
-/*@keyframes wave2 {*/
-/*    0% {*/
-/*        transform: rotate(20deg);*/
-/*    }*/
-/*    100% {*/
-/*        transform: rotate(-40deg);*/
-/*    }*/
-/*}*/
 
 .leftfoot {
     width: 30px;
@@ -177,7 +153,7 @@ body {
 
 .reviews-padding {
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .review-bg-color {
@@ -188,6 +164,10 @@ body {
 }
 
 #middle-jumbotron {
+    margin-bottom: 0;
+}
+
+#midlast-jumbo {
     margin-bottom: 0;
 }
 
@@ -202,6 +182,7 @@ body {
     padding-inline-end: 20px;
     padding-inline-start: 20px;
     padding-top: 20px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -211,23 +192,13 @@ body {
     box-shadow: 0 5px 8px grey;
 }
 .card-hover {
-    border-radius: 15px;
-    height: 270px;
+    border-radius: 10px;
+    height: 420px;
     overflow: hidden;
     cursor: pointer;
+
 }
 
-
-.copyright-notice {
-    /*margin-top: 200px;*/
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;
-}
 
 
 /* This is for the border around the about text  on about page */
@@ -253,3 +224,195 @@ legend{width:200px;padding:10px 20px;}
 .heading-padding {
     padding-bottom: 20px;
 }
+
+.arrow-down {
+    width: 6px;
+    height: 100px;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    top: 175px;
+    left: 155px;
+    transform: rotate(12deg);
+    transform-origin: top;
+}
+
+.footer-bgc {
+    background-color: white;
+
+}
+
+.download {
+    background-color: grey;
+}
+
+#myBtn {
+    align-content: end;
+}
+
+/* drop down on hover, not supported by bootstrap */
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-tabs .dropdown-menu,
+.nav-pills .dropdown-menu,
+.navbar .dropdown-menu {
+    margin-top: 0;
+}
+
+body{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.question{
+    font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
+.answers label{
+    display: block;
+}
+#submit{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #279;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#submit:hover {
+    background-color: #38a;
+}
+
+
+*, *::before, *::after {
+     box-sizing: border-box;
+ }
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.quiz-card {
+    width: 780px;
+    height: 280px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 0 40px -16px;
+}
+
+
+.quiz-example {
+    width: 800px;
+    height: 900px;
+    max-width: 80%;
+    border-radius: 5px;
+    padding: 25px;
+
+    margin-top: 50px;
+    margin-bottom: 300px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.quiz-btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.quiz-btn:hover {
+    border-color: black;
+}
+
+.quiz-btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.quiz-btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+
+.hide {
+    display: none;
+}
+
+
+#loading-bar {
+    margin-top: 100px;
+}
+
+.progress-bg {
+    background-color: white !important;
+}
+
+.active-nav {
+    background-color: #312f2f;
+    display:flex;
+    top: 0;
+    bottom: 0;
+    border-radius: 4px;
+}
+
+.image-border {
+    border-color: black;
+    border-width: 2px;
+}
+
+.line-breaker { display: block;
+    overflow: hidden;
+    border-style: inset;
+    height: 5px;
+    color: black;
+    margin-top: 60px;
+}
+
+

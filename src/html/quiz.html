@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/custom-style.css">
 
+
+
     <title>Home</title>
 </head>
 <body>
+
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">UI/UX Things</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +26,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="http://localhost:63342/uxfyp/src/html/index.html?#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active active-nav">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">About</a>
             </li>
 
@@ -45,44 +48,70 @@
     </div>
 </nav>
 
-</div>
 
-<div class="container" style="height: 700px; padding-top: 150px; padding-bottom: 200px">
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
-            <fieldset class="border pl-5 pr-5" >
-                  <legend class ='text-center'>About Us</legend>
-                <p id="innerPara">
-                    When are we<br>
+<!--<div id="quiz-bg" class="container offset-4">-->
 
-                    Our journey started back in September 2019 when our founder and CEO David Twomey
-                    got the opportunity to do a research project on a subject he had interest in but
-                    related to his field of studies. David had months of work experience as a UI/UX intern
-                    and so put his skills he learnt to use to learn more about how young business' starting
-                    off could improve the user interface and user experience of their websites. <br><br> Why we started <br>
-                    We know that first impressions last but we also know business' have budgets and some
-                    may not have a UX team. So here at UI/UX things we can help you quickly improve your
-                    website and in turn improve conversion rates a.k.a. money for your business, and for good value of time and money!
-                </p>
-            </fieldset>
+<!--    <div id="question-container" class="hide pt-5">-->
+<!--        <div id="question">Questions</div>-->
+<!--        <div id="answer-buttons" class="btn-grid pt-5">-->
+<!--            <button class="btn-blue">Answer 1</button>-->
+<!--            <button class="btn-blue">Answer 2</button>-->
+<!--            <button class="btn-blue">Answer 3</button>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="controls pt-5">-->
+<!--        <button id="start-btn" class="start-btn btn-main">Start</button>-->
+<!--        <button id="next-btn" class="next-btn btn-primary text-dark hide">Next</button>-->
+<!--    </div>-->
+
+<!--</div>-->
+<!--</div>-->
+
+
+
+<div class="jumbotron" style="height: 500px; padding-top: 120px; background-color: #f5cb5c">
+<div class="container offset-2">
+    <div class="quiz-card">
+        <div class="container">
+            <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="quiz-btn">Answer 1</button>
+                    <button class="quiz-btn">Answer 2</button>
+                    <button class="quiz-btn">Answer 3</button>
+                    <button class="quiz-btn">Answer 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn btn-outline-dark">Start</button>
+                <button id="next-btn" class="next-btn btn btn-outline-dark hide">Next</button>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="container justify-content-center pt-5">
 
-<div class="container pt-5">
-    <div class="row justify-content-center pt-5">
-
-        <div class="col-lg-4">
-            <p> We do not have facebook or twitter pages set up yet but in the mean time here is a tasty little page for you
-                to follow where they post useful and interesting posts regularly.</p>
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUIandUX%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-        </div>
-
-    </div>
 </div>
 </div>
+
+<div class="container offset-2">
+<div class="quiz-example pt-5">
+
+    <h5>Enjoy the quick and fun quiz. The green are the right answers and the red are the wrong ones.
+        You can take the quiz as many times as you want by hitting the restart button at the end. Check
+        back at the end of the month where we will have new questions.</h5>
+    <br>
+    <h5>If you are looking for more fun quiz's to do, then check out this easy at first UI quiz but gets almost
+        super difficult! This brings you to a new page but it is super fun if you are competitive.</h5>
+    <br>
+    <img src="../images/cantUnsee.PNG"  alt="Can't Unsee quiz"/>
+    <br>
+    <Br>
+    <a id="btn-center" class="btn btn-dark btn-lg btn-block" href="https://cantunsee.space/" target="_blank">Take the quiz</a>
+</div>
+</div>
+
+
 <footer class="container-fluid py-5 footer-bgc">
     <div class="row">
         <div class="col-12 col-md pt-5">
@@ -116,8 +145,11 @@
     </div>
 </footer>
 
-<!-- optional javascript here -->
 
+
+<!-- optional javascript here -->
+<script type="text/javascript" src="../javascript/basicjs.js"></script>
+<script type="text/javascript" src="../javascript/script.js"></script>
 <!-- We have jquery first, then popper and then Bootstrap js -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

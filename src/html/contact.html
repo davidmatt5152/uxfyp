@@ -8,10 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/custom-style.css">
+    <script type="text/javascript" src="../javascript/basicjs.js"></script>
 
     <title>Home</title>
 </head>
 <body>
+
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">UI/UX Things</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,11 +25,11 @@
             <li class="nav-item active">
                 <a class="nav-link" href="http://localhost:63342/uxfyp/src/html/index.html?#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active active-nav">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">About</a>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item active active-nav">
                 <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item dropdown active ">
@@ -45,44 +47,46 @@
     </div>
 </nav>
 
-</div>
+<div id="top-jumbotron" class="jumbotron" style="height: 850px;">
 
-<div class="container" style="height: 700px; padding-top: 150px; padding-bottom: 200px">
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
-            <fieldset class="border pl-5 pr-5" >
-                  <legend class ='text-center'>About Us</legend>
-                <p id="innerPara">
-                    When are we<br>
+    <div class="container">
+            <div class="col-md-6 offset-3 pt-5">
+                <h2>To contact us</h2>
+                <h5>We would love to hear from you, if you would like to get in touch.
+                    Please email <a href="mailto:116485502@umail.ucc.ie" target="_top">116485502@umail.ucc.ie </a>
+                    just allow a couple of days for a reply.</h5>
+            </div>
+    </div>
 
-                    Our journey started back in September 2019 when our founder and CEO David Twomey
-                    got the opportunity to do a research project on a subject he had interest in but
-                    related to his field of studies. David had months of work experience as a UI/UX intern
-                    and so put his skills he learnt to use to learn more about how young business' starting
-                    off could improve the user interface and user experience of their websites. <br><br> Why we started <br>
-                    We know that first impressions last but we also know business' have budgets and some
-                    may not have a UX team. So here at UI/UX things we can help you quickly improve your
-                    website and in turn improve conversion rates a.k.a. money for your business, and for good value of time and money!
-                </p>
-            </fieldset>
+    <div class="container">
+        <div class="col-md-6 offset-3 pt-5">
+            <h2> Privacy </h2>
+            <h5>All content on this page is created and owned by us or acquired royalty free, unless otherwise stated.</h5>
         </div>
     </div>
-</div>
 
-<div class="container justify-content-center pt-5">
-
-<div class="container pt-5">
-    <div class="row justify-content-center pt-5">
-
-        <div class="col-lg-4">
-            <p> We do not have facebook or twitter pages set up yet but in the mean time here is a tasty little page for you
-                to follow where they post useful and interesting posts regularly.</p>
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUIandUX%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <div class="container">
+        <div class="col-md-6 offset-3 pt-5">
+            <h2>Terms of Use</h2>
+            <h5>You can share information on this page as long as it is not for commercial use.
+                If you plan on using this page in the hopes of gaining revenue off it, you must contact the page owner first
+                via the email address above.</h5>
         </div>
-
     </div>
+
+
+    <div id="loading-bar" class="container pt-5">
+        <div class="col-6 offset-3">
+            <p> Please bare with us as this page is still in development</p>
+            <div class="progress progress-bg ">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            </div>
+        </div>
+    </div>
+
 </div>
-</div>
+
+
 <footer class="container-fluid py-5 footer-bgc">
     <div class="row">
         <div class="col-12 col-md pt-5">
@@ -115,6 +119,8 @@
         </div>
     </div>
 </footer>
+
+
 
 <!-- optional javascript here -->
 
