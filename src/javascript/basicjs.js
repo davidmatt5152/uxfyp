@@ -1,3 +1,4 @@
+//This is to bring you back to top of page
 mybutton = document.getElementById("myBtn");
 
 function topFunction() {
@@ -5,7 +6,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-
+//This function is to copy email address to clipboard
 function myFunction() {
     var copyText = document.getElementById("myInput");
 
