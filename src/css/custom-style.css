@@ -151,25 +151,12 @@ body {
     transform: rotate(-8deg);
 }
 
-.reviews-padding {
-    margin-top: 150px;
-    margin-bottom: 200px;
-}
-
 .review-bg-color {
     background-color: floralwhite;
-    width: 100%;
-    top: 0;
-    left: 0;
+    padding-top: 200px;
+    padding-bottom: 150px;
 }
 
-#middle-jumbotron {
-    margin-bottom: 0;
-}
-
-#midlast-jumbo {
-    margin-bottom: 0;
-}
 
 .top-buffer {
     margin-top:20px;
@@ -198,7 +185,6 @@ body {
     cursor: pointer;
 
 }
-
 
 
 /* This is for the border around the about text  on about page */
@@ -314,13 +300,6 @@ body{
     --hue-correct: 145;
 }
 
-body.correct {
-    --hue: var(--hue-correct);
-}
-
-body.wrong {
-    --hue: var(--hue-wrong);
-}
 
 .quiz-card {
     width: 780px;
@@ -415,4 +394,15 @@ body.wrong {
     margin-top: 60px;
 }
 
+.yurt-container {
+    background-color: #fd7e14;!important;
+}
 
+.values-bg {
+
+}
+
+.uivsux-bg {
+    background-color: #E8EDDF;
+    padding-top: 100px;
+}
