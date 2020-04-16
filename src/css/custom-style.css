@@ -180,7 +180,7 @@ body {
 }
 .card-hover {
     border-radius: 10px;
-    height: 420px;
+    height: 300px;
     overflow: hidden;
     cursor: pointer;
 
@@ -394,12 +394,10 @@ body{
     margin-top: 60px;
 }
 
-.yurt-container {
-    background-color: #fd7e14;!important;
-}
 
 .values-bg {
-
+    padding-top: 150px;
+    padding-bottom: 150px
 }
 
 .uivsux-bg {
